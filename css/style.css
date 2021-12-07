@@ -1,0 +1,426 @@
+/*--------------------------------
+# General
+---------------------------------*/
+* {
+    margin: 0;
+    padding: 0; }
+
+body {
+    background-color: #212529;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sectionTitle {
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+}
+
+
+/*--------------------------------
+# Header
+---------------------------------*/
+.welcomeContainer {
+    height: 80vh;
+    padding: 0 15vw 0 15vw;
+    font-family: 'Aclonica', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/headerBackground.jfif');
+    background-size: cover;
+}
+
+
+/*--------------------------------
+# Nav
+---------------------------------*/
+.navigationBar {
+    box-shadow: 0px 0px 20px rgba(141, 153, 174, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.navItem__navLink {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.navContainer__logo {
+    margin-left: 1vw;
+}
+
+
+/*--------------------------------
+# Div after nav
+---------------------------------*/
+.belowContainer {
+    height: 8vh;
+    background-color: #212529;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 1vw 0 1vw;
+}
+
+
+/*--------------------------------
+# About
+---------------------------------*/
+.aboutContainer {
+    min-height: 100vh;
+    padding: 25vh 10vw 25vh 10vw;
+    color: #edf2f4;
+    display: flex;
+}
+
+.aboutContainer__textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textContent__aboutTitle {
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+}
+
+.content__parrContainer {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.aboutContainer__imgContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*--------------------------------
+# Projects
+---------------------------------*/
+.projectsContainer {
+    background-color: #edf2f4;
+    padding: 20vh 10vw 20vh 10vw;
+}
+
+.projectsContainer__title {
+    text-align: center;
+    margin-bottom: 10vh;
+    text-shadow: 2px 0 0 #8d99ae;
+}
+
+.itemListContainer__itemContainer {
+    margin-bottom: 8vh; 
+}
+
+.itemContainer__imgContent, .itemContainer__textContent {
+    text-align: center;
+}
+
+.itemContainer__imgContent {
+    background-color: #edf2f4;
+}
+
+.projectLink__image {
+    box-shadow: 20px 20px 20px rgba(14, 39, 82, 0.3);
+}
+
+.projectLink__image:hover {
+    border: 2px solid rgba(241, 241, 241, 0.3);
+    transform: scale(1.02);
+}
+
+.itemContainer__textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textContent__projectTitle {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 3vh;
+}
+
+.textContent__line {
+    border: 2px solid #ef233c;
+}
+
+
+/*--------------------------------
+# Contact
+---------------------------------*/
+.contactContainer {
+    height: 65vh;
+    color: #edf2f4;
+    padding: 15vh 10vw 15vh 10vw;
+}
+
+.contactContainer__title {
+    text-align: center;
+}
+
+.contactContainer__iconContainer {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.iconContainer__socialIconsSet {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIconsSet__link {
+    text-decoration: none;
+    color: #edf2f4;
+}
+
+.socialIconsSet__link:hover {
+    color: #edf2f4;
+}
+
+.socialIconsSet__icon:hover {
+    transform: scale(1.2);
+}
+
+.mailContainer {
+    padding: 0 5vw 0 5vw;
+}
+
+.mailContainer__parr {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+/*--------------------------------
+# Footer
+---------------------------------*/
+.endSection {
+    height: 35vh;
+    padding: 10vh 15vw 10vh 15vw;
+    background-color: #8d99ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.endSection__parr {
+    color: #212529;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+/*-----------------------
+# Media Queries   
+-------------------------*/
+@media only screen and (max-width:600px) {
+
+    :root {
+        font-size: 14px;
+    }
+
+    /*--------------------------------
+    # Div after nav
+    ---------------------------------*/
+    .belowContainer__image {
+        margin-bottom: 10vh;
+    }
+
+    /*--------------------------------
+    # About
+    ---------------------------------*/
+    .aboutContainer {
+        flex-direction: column;
+    }
+
+    .aboutContainer__textContent {
+        justify-content: center;
+    }
+
+    .aboutContainer__imgContent {
+        justify-content: center;
+    }
+
+    .content__image {
+        width: 60%;
+        margin-top: 5vh;
+    }
+
+    .textContent__parr, .textContent__line {
+        width: 75%;
+    }
+
+    /*--------------------------------
+    # Projects
+    ---------------------------------*/
+    .itemContainer__textContent {
+        margin: 3vh;
+    }
+
+    .textContent__projectTitle {
+        margin-top: 3vh;
+    }
+
+    /*--------------------------------
+    # Contact
+    ---------------------------------*/
+    .socialIconsSet__icon {
+        margin: 0 6vw 0 6vw;
+    }
+}
+
+
+@media only screen and (min-width:600px) {
+    
+    :root {
+        font-size: 16px;
+    }
+
+    /*--------------------------------
+    # About
+    ---------------------------------*/
+    .aboutContainer {
+        flex-direction: column;
+    }
+
+    .aboutContainer__textContent {
+        justify-content: center;
+    }
+
+    .aboutContainer__imgContent {
+        justify-content: center;
+    }
+
+    .content__image {
+        width: 50%;
+        margin-top: 5vh;
+    }
+
+    /*--------------------------------
+    # Projects
+    ---------------------------------*/
+    .itemContainer__textContent {
+        margin: 3vh;
+    }
+
+    .textContent__projectTitle {
+        margin-top: 3vh;
+    }
+
+    .textContent__parr {
+        width: 60%;
+    }
+
+    .textContent__line {
+        width: 40%;
+    }
+
+    /*--------------------------------
+    # Contact
+    ---------------------------------*/
+    .socialIconsSet__icon {
+        margin: 0 4vw 0 4vw;
+    }
+}
+
+@media only screen and (min-width:992px) {
+
+    /*--------------------------------
+    # Nav
+    ---------------------------------*/
+    .aboutContainer {
+        flex-direction: column;
+    }
+    .navigationBar__navContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navContainer__navListContainer {
+        max-width: 30%;
+    }
+    
+    .navListContainer__navList {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /*--------------------------------
+    # About
+    ---------------------------------*/
+    .aboutContainer {
+        flex-direction: row;
+    }
+
+    .aboutContainer__textContent, .aboutContainer__imgContent {
+        width: 50%;
+    }
+
+    .aboutContainer__textContent {
+        justify-content: flex-start;
+    }
+
+    .aboutContainer__imgContent {
+        justify-content: flex-end;
+    }
+
+    /*--------------------------------
+    # Projects
+    ---------------------------------*/
+    .itemListContainer__itemContainer {
+        display: flex;
+    }
+
+    .itemContainer__evenImgContent {
+        order: 1;
+    }
+
+    .itemContainer__imgContent, .itemContainer__textContent {
+        width: 50%;
+    }
+
+    .textContent__projectTitle {
+        margin-top: 7vh;
+    }
+
+    /*--------------------------------
+    # Contact
+    ---------------------------------*/
+    .socialIconsSet__icon {
+        margin: 0 2vw 0 2vw;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+    
+    /*--------------------------------
+    # Projects
+    ---------------------------------*/
+    .textContent__projectTitle {
+        margin-top: 10vh;
+    }
+}
+
+
+@media only screen and (min-width:1400px) {
+
+    /*--------------------------------
+    # Projects
+    ---------------------------------*/
+    .textContent__projectTitle {
+        margin-top: 15vh;
+    }
+
+}
+
